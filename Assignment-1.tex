@@ -1,0 +1,123 @@
+\documentclass[a4paper,12pt]{amsart}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+\usepackage{mathrsfs}
+%\usepackage{amsthm}
+\usepackage{cleveref}
+\usepackage[doi=false,isbn=false,url=false,natbib=true,sorting=nyt,firstinits=true,style=ieee]{biblatex}
+%\addbibresource{RGbib.bib}
+\usepackage{showkeys}
+\usepackage{esint}
+\usepackage{graphicx}
+\usepackage{copyrightbox}
+\usepackage{color}
+\usepackage{dsfont}
+\usepackage{tabularx}
+%\usepackage{mdwlist}
+\usepackage{enumitem}\setlist{leftmargin=*}
+\usepackage{etaremune}%\setlist{leftmargin=*}
+\usepackage{comment}
+\usepackage[super]{nth}
+%\usepackage[all=normal,paragraphs,floats,wordspacing]{savetrees}
+%\pagestyle{empty}
+%\linespread{1.1}
+\usepackage[centering]{geometry}
+\usepackage{url}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+%\usepackage{fancyhdr}
+%\lhead{}
+%\rhead{}
+%\pagestyle{fancy}
+%\usepackage{todonotes}
+\theoremstyle{definition} \newtheorem{lemma}{Lemma}
+\theoremstyle{definition} \newtheorem{definition}[lemma]{Definition}
+\theoremstyle{definition} \newtheorem{theorem}[lemma]{Theorem}
+\theoremstyle{definition} \newtheorem{question}{Question}
+\theoremstyle{definition} \newtheorem{example}[lemma]{Example}
+\theoremstyle{remark} \newtheorem{remark}[lemma]{Remark}
+\theoremstyle{definition} \newtheorem{corollary}[lemma]{Corollary}
+\theoremstyle{definition} \newtheorem{proposition}[lemma]{Proposition}
+\theoremstyle{remark} \newtheorem*{notation}{Notation}
+\theoremstyle{remark} \newtheorem*{ackn}{Acknowledgements}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\spt}{\mathrm{spt}}
+\newcommand{\df}{\mathrel{\mathop:}=}
+
+\renewcommand{\descriptionlabel}[1]{%
+  \hspace\labelsep \upshape\bfseries #1.%
+}
+
+\author{}
+%	\address{Mathematics Institute, Zeeman Building, University of Warwick, CV4 7AL, UK.}
+%	\email{R.Gratwick@warwick.ac.uk}
+%\date{\today}
+%The research leading to these results has received funding from the European Research Council / ERC Grant Agreement n.291497.\\ %% For work from Warwick ERC grant
+%	File: \jobname}
+
+\title{APPS Assignment 1}
+
+\thanks{RTG, Sep 2016}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+{\it
+Hand in solutions at the lecture at 10.00 on Thursday~\nth{29} September.  As with all mathematics, answers to all questions should include full justification.
+}
+\end{center}
+\begin{description}[itemsep=1.0pt]
+\item[Exercise~1.2 (edited)] Let $B, C, D$, and $E$ be the following sets:
+\begin{align*}
+B &=\left\{x \mid x\ \text{is a real number},\ x^2<4\right\},\\
+C & =\left\{x \mid x\ \text{is a real number},\ 0\leq x<2\right\},\\
+D & =\left\{x \mid x\in\mathbb{Z},\ x^2<1\right\},\\
+E & =\left\{1\right\}.
+\end{align*}
+\begin{enumerate}[label=(\alph*)]
+\item Identify a pair of these sets that has the property that neither is
+contained in the other.  Is this the only possible answer?
+
+\item You are given that $X$ is one of the sets $B, C, D,$ or $E$,
+but you do not know which one. You are also given that $E\subseteq
+X$ and $X\subseteq B$. What are the possibilities for the identity of $X$?
+\end{enumerate}
+\hfill
+[{\bf 4 marks}]
+\item[Exercise~1.6 (edited)] Write down careful proofs of the following
+statements.
+\begin{enumerate}[label=(\alph*)]
+\item $\sqrt{6}-\sqrt{2}>1$.%
+\item If $n$ is an integer such that $n^2$ is odd, then $n$ is odd.%
+\item If $n=m^3-m$ for some \emph{odd} integer $m$, then $n$ is a multiple of
+$8$.
+\end{enumerate}
+\hfill
+[{\bf 6 marks}]
+\item[Exercise~1.10 (edited)] 
+Prove by contradiction that a real number that is less than or equal to every positive real number cannot be positive.
+\hfill
+[{\bf 4 marks}]
+\item[Exercise~2.4]\hfill
+\begin{enumerate}[label=(\alph*)]
+\item Let $a,b$ be rationals and $x$ irrational. Show that if
+$\frac{x+a}{x+b}$ is rational, then $a=b$.
+\item Let $x,y$ be rationals such that
+$\frac{x^2+x+\sqrt{2}}{y^2+y+\sqrt{2}}$ is also rational. Prove
+that either $x=y$ or $x+y=-1$.
+\end{enumerate}
+\hfill
+[{\bf 6 marks}]
+\item[Exercise~2.2 (edited) {[Non-assessed]}]
+Which of the following numbers are rational and
+which are irrational?  (You may assume that $\sqrt{3}$ is irrational.)
+\begin{enumerate}[label=(\alph*)]
+\item $\sqrt{2}+\sqrt{3/2}$.%
+\item $1+\sqrt{2}+\sqrt{3/2}$.%
+\item $2\sqrt{18}-3\sqrt{8}+\sqrt{4}$.%
+%\item $\sqrt{2}+\sqrt{3}+\sqrt{5}$ (\emph{Hint:} For this part you can use the fact that if $n$ is a positive integer that is not a square, then $\sqrt{n}$ is irrational. This follows from Proposition~11.3.%
+\item $\sqrt{2}+\sqrt{3}-\sqrt{5+2\sqrt{6}}$.%
+\end{enumerate}
+\end{description}
+\end{document}
